@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="animation.js"></script>   
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <!-- <link rel="" href=""> -->
+    </head>
+    <body>
+    <h1 class="center">rkc group placement</b></h1>
+
+
+    <p>Submit a csv with Name (first column), Group (second column), Dances (third column). Please include these headers. Refresh the page to reset!</p>
+    <input id="csv" type="file" accept=".csv"/>
+
+    <hr>
+    <h3 id="error"></h3>
+
+    <form id="form">
+        <label for="groupAnum">How many spots allotted for Group A?</label><br>
+        <input type="text" id="groupAnum" name="groupAnum"><br>
+        <label for="groupAnum">How many spots allotted for Group B/C?</label><br>
+        <input type="text" id="groupBCnum" name="groupBCnum"><br>
+        <button type='button' id='submit'>Submit</button>
+    </form>
+
+    <br>
+
+    <table id="results">
+    </table>
+
+    <body>
+</html>
